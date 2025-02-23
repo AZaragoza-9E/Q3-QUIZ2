@@ -1,0 +1,45 @@
+* {
+	color: black;
+	font-family: "Georgia", sans-serif;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+}
+
+body {
+	background: url(https://preview.redd.it/made-a-hmhas-wallpaper-for-my-desktop-and-thought-id-share-v0-8hl1d6xx4x1d1.png?auto=webp&s=257eb44e632eda3be9af622aa4dcf263b7c27543) no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 20px;
+}
+
+.container-fluid {
+	background-color: #272C3A;
+	border-radius: 10px;
+}
+
+.container {
+	border-radius: 5px;
+}
+
+details {
+	background-color: #9EB3C2;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.btn {
+	background-color: #4B5369;
+}
+
+.footer {
+	text-align: center;
+}
+
+a {
+	color: white;
+}

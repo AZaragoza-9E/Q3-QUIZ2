@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> QUIZ 2: Javascript Events ♡</title>
+
+	<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- JS can be inserted here -->
+</head>
+<body>
+
+<!-- JS -->
+<script type="text/javascript"> //thanks to my dad for helping me with this
+	function user() {
+		var name = document.getElementById('inputName').value;
+		
+		alert('Thank you for filling out the form, ' + name + '!');	
+	}
+
+	function price() {
+		var amt = document.getElementById('num').value;
+		var inside = document.getElementById('cabin').value;
+
+		var prices = {
+			"1": 455 * amt,
+			"2": 910 * amt,
+			"3": 1365 * amt,
+			"4": 1820 * amt
+			"5": 2275 * amt
+		}
+
+		alert (`The price is $${prices[inside]} USD.`)
+
+	}
+
+</script>
+
+<!-- BILLIE EILISH HMHAS TICKETS -->
+<div class="container-fluid">
+	<br>
+	<h2> Billie Eilish HMHAS Ticket Center ♡ </h2>
+	<br>
+
+<!-- DETAILS FOR INFO -->
+	<div class="d-flex container">
+		<div class="container">
+			<details>
+				<summary>
+					INFO: 
+				</summary>
+
+				<br>
+				<div class="mb-3">
+					<label for="InputName"> Full Name: </label>
+					<input type="text" class="form-control" id="inputName">
+				</div>
+
+				<div class="mb-3">
+					<label for="inputEmail"> Email Address: </label>
+					<input type="email" class="form-control" id="inputEmail">
+				</div>
+
+				<div class="mb-3">
+					<label for="inputEmail"> Contact No: </label>
+					<input type="contact" class="form-control" id="inputContact">
+				</div>
+
+				<button type="button" class="btn btn-success" onclick="user()"> SUBMIT ♡</button>
+			</details>
+			<br>
+		</div>
+
+<!-- DETAILS FOR THE TICKET PRICE --> <!-- some info copy pasted from Q2 works -->
+		<div class="container"> 
+			<details>
+				<summary>
+					Ticket Price(s):
+				</summary>
+
+					<br>
+					<div class="mb-3">
+						<label for="inputName"> Ticket Quantity: </label> 
+						<br>
+						<input type="number" class="form-control" id="num" name="quantity" min="1" max="20">
+					</div>
+
+					<div class="dates mb-3"> 
+						<label for="inputEmail"> Choose which date: </label> 
+						<br>
+							<select name="class" id="dates" class="form-control">
+								<option value="feb25"> Feb 25 (Sydney Olympic Park, New South Wales)</option>
+								<option value="feb27"> Feb 27 (Sydney) </option>
+								<option value="mar4"> Mar 4 (Melbourne, Victoria)</option>
+								<option value="mar5"> Mar 5 (Melbourne, Victoria)</option>
+								<option value="mar7"> Mar 7 (Melbourne, Victoria)</option>
+								<option value="mar8"> Mar 8 (Melbourne, Victoria)</option>
+							</select>
+					</div>
+
+					<button type="button" class="btn btn-success" onclick="price()"> Ticket Price: </button>
+			</details>
+		</div>
+
+		<div class="container">
+			<details>
+				<summary>
+					Claim Ticket here!
+				</summary>
+					<div>
+						<img src="https://i.pinimg.com/736x/55/e3/a4/55e3a4d93303ba852cb9d9ad5d3f9d77.jpg" width="70%">
+					</div>
+
+					<br>
+					<button type="button" class="btn btn-success" onclick="alert('Please check your email to receive your ticket(s). Thank you for your purchase!')"> Purchase Ticket(s) ♡</button>
+
+					<button type="button" id="reload" class="ms-3 btn btn-success" onClick="window.location.reload()"> Buy More Tickets!! ♡ </button>
+			</details>
+			<br>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- FOOTER --> <!-- i apologize for not adding it to the previous works i forgot too ;-; -->
+	<br>
+	<h5> 
+		<a href="https://github.com/AZaragoza-9E/Q3-QUIZ2" target="_blank">Annika Colleen Zaragoza | 9-E ♡</a>
+	 </h5>
+
